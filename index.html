@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400%7CProduct+Sans" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.8/umd.js" integrity="sha512-Wu9XXg78PiNE0DI4Z80lFKlEpLq7yGjquc0I35Nz+sYmSs4/oNHaSW8ACStXBoXciqwTLnSINqToeWP3iNDGmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Logo Generator</title>
+  </head>
+  <body>
+
+        <nav class="nav-bar">
+          <div class="title">Logo Generator</div>
+          <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+          <ul>
+            <li class = "website"><a href="https://dscjssstu.in/team"> GDSC JSSSTU </a></li>
+            <li class = "bug"><a href="mailto:jssstu@gmail.com"> Report Bug </a></li>
+          </ul>
+        </div>
+        </nav>
+      
+    <input type="text" id="college-name" class="collegeName" placeholder="Enter College Name">
+    <div class="svg-view">
+        <svg class="logo" width="1570px" height="250px" version="1.1"
+            viewbox="0 0 1570 250"
+            xmlns="http://www.w3.org/2000/svg">
+            <image width="200" height="97" x="0" y="100" href="dsc_logo.svg" transform="translate(0, -48.5)"></image>
+            <text dominant-baseline="middle" fill="rgb(103, 108, 114)" font-family="Product Sans" font-size="94" x="230" y="110">Google Developer Student Clubs</text>
+            <text class="college-name" dominant-baseline="middle" fill="rgb(103, 108, 114)" font-family="Product Sans" font-size="50" x="230" y="204">{college-name-here}</text>
+        </svg>
+        <br>
+        <button class="download">Download</button>
+        <canvas style="display: none;"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
