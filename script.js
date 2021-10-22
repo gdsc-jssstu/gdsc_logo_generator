@@ -24,17 +24,28 @@
           const canvas = view.getElementsByTagName("canvas")[0];
           const svg = view.getElementsByTagName("svg")[0];
           if (first) {
-              const button = view.getElementsByTagName("button")[0];
-              button.addEventListener('click', () => {
-                  var image = canvas.toDataURL("image/png");
+              const buttonJPG = view.getElementsByTagName("button")[1];
+              const buttonPNG = view.getElementsByTagName("button")[0];
+              buttonJPG.addEventListener('click', () => {
+                  var image = canvas.toDataURL("image/jpeg");
                   let tmp = document.createElement('a');
-                  tmp.download = "dsclogo.png";
+                  tmp.download = "dsclogo.jpeg";
                   tmp.href = image;
 
                   document.body.appendChild(tmp);
                   tmp.click();
                   document.body.removeChild(tmp);
               });
+              buttonPNG.addEventListener('click', () => {
+                var image = canvas.toDataURL("image/png");
+                let tmp = document.createElement('a');
+                tmp.download = "dsclogo.png";
+                tmp.href = image;
+
+                document.body.appendChild(tmp);
+                tmp.click();
+                document.body.removeChild(tmp);
+            });
           }
           const ctx = canvas.getContext('2d');
           v = canvg.Canvg.fromString(ctx, svg.outerHTML);
