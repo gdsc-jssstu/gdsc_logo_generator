@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400%7CProduct+Sans" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.8/umd.js" integrity="sha512-Wu9XXg78PiNE0DI4Z80lFKlEpLq7yGjquc0I35Nz+sYmSs4/oNHaSW8ACStXBoXciqwTLnSINqToeWP3iNDGmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../public/styles/style1.css">
+    <title>Logo Generator</title>
+  </head>
+  <body>
+
+        <nav class="nav-bar">
+          <div class="title">Logo Generator</div>
+          <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+          <ul>
+            <li class = "website"><a href="https://dscjssstu.in/team"> GDSC JSSSTU </a></li>
+            <li class = "bug"><a href="mailto:jssstu@gmail.com"> Report Bug </a></li>
+          </ul>
+        </div>
+        </nav>
+      
+    <input type="text" id="college-name" class="collegeName" placeholder="Enter College Name">
+    <div class="svg-view">
+        <svg class="logo" width="1080px" height="345px" version="1.1"
+            viewbox="0 0 1570 300"
+            xmlns="http://www.w3.org/2000/svg">
+            <image  width="200" height="97" x="700" y="25" href="../public/images/dsc_logo.svg" transform="translate(0, -48.5)"></image>
+            <text class="main-head" dominant-baseline="hanging" x="180" y="91" fill="rgb(103, 108, 114)" font-family="Product Sans" font-size="94" >Google Developer Student Clubs</text> 
+
+            <text class="college-name" dominant-baseline="hanging" x="50%" y = "200" text-anchor = "middle" fill="rgb(103, 108, 114)" font-family="Product Sans" font-size="50" >{College-name-goes-here}</text> 
+        </svg>
+        <br>
+        <button class="download">Download PNG</button>
+        <button class="download">Download JPEG</button> 
+        <canvas style="display: none;"></canvas>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
