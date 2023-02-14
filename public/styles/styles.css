@@ -91,22 +91,22 @@ a {
   margin-top: 5%;
   margin-right: 50px;
   margin-left: 25%;
-  border: 5px solid #0cf118;
+  border: 1px solid #0cf118;
 }
 .temp1:hover {
   cursor: pointer;
-  border: 10px solid #037709;
+  border: 3px solid #037709;
 }
 
 .temp2 {
   margin-right: 50%;
   margin-top: 5%;
-  border: 5px solid #0cf118;
+  border: 1px solid #0cf118;
 }
 
 .temp2:hover {
   cursor: pointer;
-  border: 10px solid #037709;
+  border: 3px solid #037709;
 }
 
 /* For Mobile Devices*/
@@ -161,7 +161,7 @@ a {
     right: 0px;
     left: 0px;
     padding: 5px 2px 5px 35px;
-    border: 2px solid #0cf118;
+    border: 1px solid #0cf118;
   }
 
   .temp2 {
@@ -172,7 +172,7 @@ a {
     right: 0;
     left: 0;
     padding: 5px 2px 5px 33px;
-    border: 2px solid #0cf118;
+    border: 1px solid #0cf118;
   }
 }
 
